@@ -24,6 +24,10 @@ Como operadora, a NoHarm.ai armazena as informações do prontuário eletrônico
 
 Na intranet do hospital é instalado uma máquina virtual com o software Apache Nifi com acesso à visões do banco de dados restritas aos dados listados acima. O Apache Nifi é repsonsável por transformar os dados, dentro da intranet do hospital, e enviá-los para o banco de dados da NoHarm.ai no serviço RDS da AWS.
 
+### Serviço de Resolução de Nomes
+
+O sistema da NoHarm.ai não armazena na base de dados os nomes dos pacientes por conta da privacidade dos dados e pela Lei Geral de Proteção de Dados (LGPD). Para que a NoHarm.ai resolva os nomes dos paciente é exposto um serviço, através do protocolo SSL, na intranet do hospital. Assim, somente dentro da intranet do hospital, a NoHarm.ai resolve os nomes do lado do cliente (client-side).
+
 ## Fluxo Externo (NoHarm.ai)
 
 Os dados armazenados na infraestrutura da NoHarm.ai trafegam em três ambientes:
