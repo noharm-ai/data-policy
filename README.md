@@ -1,6 +1,6 @@
 # Política de Dados NoHarm.ai
 
-Este documento descreve os dados utilizados pela NoHarm.ai, o fluxos de dados na infraestrutura do hospital, o fluxo de dados na infraestrura da NoHarm.ai e as certificações de segurança. A NoHarm.ai mantém a sua infraestrura completa na Amazon Web Services (AWS).
+Este documento descreve os dados utilizados pela NoHarm.ai, o fluxos de dados na infraestrutura do hospital, o fluxo de dados na infraestrura da NoHarm.ai e as certificações de segurança. A NoHarm.ai mantém a sua infraestrutura completa na Amazon Web Services (AWS).
 
 ## Dados Utilizados
 
@@ -13,12 +13,12 @@ Como controladora, a NoHarm.ai armazena as dados pessoais das farmacêuticas com
 ### Operadora
 
 Como operadora, a NoHarm.ai armazena as informações do prontuário eletrônico listadas abaixo:
- - Setores: nome do setor
- - Medicamentos: nome do medicamento
- - Paciente: número do atendimento, data de nascimento, data de internação, cor, sexo, peso e altura
- - Prescrição: número da prescrição, número do atendimento, data, leito, prontuário, prescritor
- - Ítem da Prescrição: medicamento, dose, frequência, via, horário, complemento
- - Exames: número do atendimento, tipo, data, resultado
+ - Setores: nome do setor;
+ - Medicamentos: nome do medicamento;
+ - Paciente: número do atendimento, data de nascimento, data de internação, cor, sexo, peso e altura;
+ - Prescrição: número da prescrição, número do atendimento, data, leito, prontuário, prescritor;
+ - Ítem da Prescrição: medicamento, dose, frequência, via, horário, complemento;
+ - Exames: número do atendimento, tipo, data, resultado;
 
 ## Fluxo Interno (Hospital)
 
