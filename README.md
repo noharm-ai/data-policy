@@ -34,6 +34,12 @@ Os dados armazenados na infraestrutura da NoHarm.ai trafegam em três ambientes:
  - RDS: Serviço de Banco de Dados da AWS;
  - Backup: Serviço de contingência de dados da AWS;
  - Lambda: Serviço de API que gerencia a troca de dados com a interface no navegador da farmacêutica (usuária) através de credenciais específicas de cada usuária para cada hospital;
+
+Todas as comunicações entre o Apache Nifi, serviços AWS e clientes são feitas de forma segura utilizando protocolo SSL/TLS para encriptar os dados.
+
+Todos os serviços acimas são qualificados pela Health Insurance Portability and Accountability Act (HIPAA, Lei de Portabilidade e Responsabilidade de Seguro de Saúde) dos EUA. 
+
+Mais informações: https://aws.amazon.com/pt/health/healthcare-compliance/
  
 ## Certificações de Segurança (AWS)
 
