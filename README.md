@@ -2,13 +2,12 @@
 Este documento descreve os dados utilizados pela NoHarm.ai, o fluxo de dados na infraestrutura do hospital, o fluxo de dados na infraestrutura da NoHarm.ai e as certificações de segurança. A NoHarm.ai mantém a sua infraestrutura completa na Amazon Web Services (AWS).
 
 ## Dados Utilizados
-Nesta seção separamos os dados utilizados pela NoHarm.ai como Controladora (a quem competem as decisões referentes ao tratamento de dados pessoais) e Operadora (quem realiza o tratamento de dados pessoais em nome do controlador, neste caso, o hospital)
-
-### Controladora
-Como controladora, a NoHarm.ai armazena os dados pessoais das farmacêuticas como: nome, email, senha para login na NoHarm. Para hospitais que tenham integração de retorno, também armazenamos o número identificador do sistema interno do hospital. Outro dado pessoal fornecido pelo hospital é o nome do prescritor. Os dados coletados das farmacêuticas são necessários para que elas sejam identificadas nos relatórios de produtividade. O nome do prescritor é utilizado para que a farmacêutica possa entrar em contato com o prescritor, o que pode ser necessário em caso de dúvida ou anormalidade apontada pelo sistema da NoHarm.ai. Todos estes dados coletados, tanto das farmacêuticas quanto dos prescritores, ficam armazenados no banco de dados, hospedado na Amazon. Os dados são armazenados por tempo indeterminado, tendo em vista que o conjunto de informações se referem ao processo de trabalho da Farmácia Clínica de cada hospital.
+Nesta seção separamos os dados utilizados pela NoHarm.ai como Operadora (quem realiza o tratamento de dados pessoais em nome do controlador, neste caso, o hospital).
 
 ### Operadora
-Como operadora, a NoHarm.ai armazena as informações do prontuário eletrônico listadas abaixo:
+A NoHarm.ai armazena os dados pessoais das farmacêuticas como: nome, email, senha para login na NoHarm. Para hospitais que tenham integração de retorno, também armazenamos o número identificador do sistema interno do hospital. Outro dado pessoal fornecido pelo hospital é o nome do prescritor. Os dados coletados das farmacêuticas são necessários para que elas sejam identificadas nos relatórios de produtividade. O nome do prescritor é utilizado para que a farmacêutica possa entrar em contato com o prescritor, o que pode ser necessário em caso de dúvida ou anormalidade apontada pelo sistema da NoHarm.ai. Todos estes dados coletados, tanto das farmacêuticas quanto dos prescritores, ficam armazenados no banco de dados, hospedado na Amazon. Os dados são armazenados por tempo indeterminado, tendo em vista que o conjunto de informações se referem ao processo de trabalho da Farmácia Clínica de cada hospital.
+
+A NoHarm.ai também armazena as informações do prontuário eletrônico listadas abaixo:
  - Setores: nome do setor;
  - Medicamentos: nome do medicamento;
  - Paciente: número do atendimento, data de nascimento, data de internação, cor, sexo, peso e altura;
